@@ -36,7 +36,7 @@ export declare class BluetoothDevice extends EventDispatcher {
      */
     readonly adData: {
         rssi?: number;
-        txPower?: null;
+        txPower?: number;
         serviceData?: Map<string, DataView>;
         manufacturerData?: Map<string, DataView>;
     };

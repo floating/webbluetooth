@@ -34,7 +34,7 @@ export declare class NobleAdapter extends EventEmitter implements Adapter {
     private characteristicHandles;
     private descriptorHandles;
     private charNotifies;
-    private foundFn;
+    private discoverFn;
     private initialised;
     private enabled;
     private os;
@@ -44,7 +44,8 @@ export declare class NobleAdapter extends EventEmitter implements Adapter {
     private checkForError(errorFn, continueFn?, delay?);
     private bufferToDataView(buffer);
     private dataViewToBuffer(dataView);
-    private discover(deviceInfo);
+    private validDevice(deviceInfo, serviceUUIDs);
+    private deviceToBluetoothDevice(deviceInfo);
     getEnabled(completeFn: (enabled: boolean) => void): void;
     startScan(serviceUUIDs: Array<string>, foundFn: (device: Partial<BluetoothDevice>) => void, completeFn?: () => void, errorFn?: (errorMsg: string) => void): void;
     stopScan(_errorFn?: (errorMsg: string) => void): void;
