@@ -75,7 +75,7 @@ export declare class BluetoothRemoteGATTCharacteristic extends EventDispatcher {
      * @param init A partial class to initialise values
      */
     constructor(init: Partial<BluetoothRemoteGATTCharacteristic>);
-    private setValue(value?, emit?);
+    private setValue;
     /**
      * Gets a single characteristic descriptor
      * @param descriptor descriptor UUID

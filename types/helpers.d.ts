@@ -33,7 +33,7 @@ export declare enum bluetoothServices {
     "scan_parameters" = 6163,
     "tx_power" = 6148,
     "user_data" = 6172,
-    "weight_scale" = 6173,
+    "weight_scale" = 6173
 }
 /**
  * Known characteristics enum
@@ -199,7 +199,7 @@ export declare enum bluetoothCharacteristics {
     "weight" = 10904,
     "weight_measurement" = 10909,
     "weight_scale_feature" = 10910,
-    "wind_chill" = 10873,
+    "wind_chill" = 10873
 }
 /**
  * Known descriptors enum
@@ -219,7 +219,7 @@ export declare enum bluetoothDescriptors {
     "es_configuration" = 10507,
     "es_measurement" = 10508,
     "es_trigger_setting" = 10509,
-    "time_trigger_setting" = 10510,
+    "time_trigger_setting" = 10510
 }
 /**
  * Gets a canonical UUID from a partial UUID in string or hex format

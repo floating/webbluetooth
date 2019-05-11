@@ -92,10 +92,9 @@
 			<h1 id="node-web-bluetooth">Node Web Bluetooth</h1>
 			<p>Node.js implementation of the Web Bluetooth Specification</p>
 			<h2 id="prerequisites">Prerequisites</h2>
-			<p><a href="https://nodejs.org">Node.js &gt; v4.8.0</a>, which includes <code>npm</code>.</p>
+			<p><a href="https://nodejs.org">Node.js &gt; v6.15.0</a>, which includes <code>npm</code>.</p>
 			<h2 id="installation">Installation</h2>
-			<pre><code class="lang-bash">$ npm install webbluetooth
-</code></pre>
+			<pre><code class="language-bash">$ npm install webbluetooth</code></pre>
 			<h2 id="usage">Usage</h2>
 			<p>The module exports a default <code>navigator.bluetooth</code> instance, the <code>Bluetooth</code> class to allow you to instantiate your own bluetooth instances and some helper methods:</p>
 			<ul>
@@ -108,7 +107,7 @@
 			</ul>
 			<h3 id="using-the-default-bluetooth-instance">Using the default bluetooth instance</h3>
 			<p>To use existing Web Bluetooth scripts, you can simply use the default <code>bluetooth</code> instance in place of the <code>navigator.bluetooth</code> object:</p>
-			<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> bluetooth = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webbluetooth"</span>).bluetooth;
+			<pre><code class="language-JavaScript"><span class="hljs-keyword">var</span> bluetooth = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webbluetooth"</span>).bluetooth;
 
 bluetooth.requestDevice({
     <span class="hljs-attr">filters</span>:[{ <span class="hljs-attr">services</span>:[ <span class="hljs-string">"heart_rate"</span> ] }]
@@ -118,12 +117,11 @@ bluetooth.requestDevice({
 })
 .then(<span class="hljs-function"><span class="hljs-params">server</span> =&gt;</span> {
     ...
-})
-</code></pre>
+})</code></pre>
 			<p>The first device matching the filters will be returned.</p>
 			<h3 id="creating-your-own-bluetooth-instances">Creating your own bluetooth instances</h3>
 			<p>You may want to create your own instance of the <code>Bluetooth</code> class. For example, to inject a device chooser function or control the referring device:</p>
-			<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> Bluetooth = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webbluetooth"</span>).Bluetooth;
+			<pre><code class="language-JavaScript"><span class="hljs-keyword">var</span> Bluetooth = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webbluetooth"</span>).Bluetooth;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleDeviceFound</span>(<span class="hljs-params">device, selectFn</span>) </span>{
     <span class="hljs-comment">// If device can be automatically selected, do so by returning true</span>
@@ -144,8 +142,7 @@ bluetooth.requestDevice({
 })
 .then(<span class="hljs-function"><span class="hljs-params">server</span> =&gt;</span> {
     ...
-})
-</code></pre>
+})</code></pre>
 			<h2 id="specification">Specification</h2>
 			<p>The Web Bluetooth specification can be found here:</p>
 			<p><a href="https://webbluetoothcg.github.io/web-bluetooth/">https://webbluetoothcg.github.io/web-bluetooth/</a></p>
@@ -204,7 +201,7 @@ bluetooth.requestDevice({
 			<h2>Variables</h2>
 			<section class="tsd-panel tsd-member tsd-kind-variable">
 				<a name="bluetooth" class="tsd-anchor"></a>
-				<h3>bluetooth</h3>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> bluetooth</h3>
 				<div class="tsd-signature tsd-kind-icon">bluetooth<span class="tsd-signature-symbol">:</span> <a href="classes/bluetooth.html" class="tsd-signature-type">Bluetooth</a><span class="tsd-signature-symbol"> =&nbsp;new Bluetooth()</span></div>
 				<aside class="tsd-sources">
 				</aside>

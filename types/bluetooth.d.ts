@@ -72,7 +72,7 @@ export declare class Bluetooth extends EventDispatcher {
      * @param options Bluetooth initialisation options
      */
     constructor(options?: BluetoothOptions);
-    private filterDevice(options, deviceInfo, validServices);
+    private filterDevice;
     /**
      * Gets the availability of a bluetooth adapter
      * @returns Promise containing a flag indicating bluetooth availability
